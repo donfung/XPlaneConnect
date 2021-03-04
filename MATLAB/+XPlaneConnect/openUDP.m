@@ -24,7 +24,7 @@ function [ socket ] = openUDP(varargin)
 %% Handle input
 p = inputParser;
 addOptional(p,'xpHost','127.0.0.1',@ischar);
-addOptional(p,'xpPort',49009,@isnumeric);
+addOptional(p,'xpPort',49000,@isnumeric);
 addOptional(p,'port',0,@isnumeric);
 addOptional(p,'timeout',100,@isnumeric);
 parse(p,varargin{:});

@@ -1,18 +1,17 @@
 function sendCTRL( values, ac, socket )
 % sendCTRL Sends command to X-Plane setting control surfaces on the specified aircraft.
 % 
-% Inputs
+% Inputs 
 %     values: control array where the elements are as follows:
-%           1. Latitudinal Stick [-1,1]
-%           2. Longitudinal Stick [-1,1]
+%           1. Elevator Stick [-1,1]
+%           2. Aileron Stick [-1,1]
 %           3. Pedal [-1, 1]
 %           4. Throttle [-1, 1]
 %           5. Gear (0=up, 1=down)
 %           6. Flaps [0, 1]
 %           7. Speed Brakes [-0.5, 1.5]
-%     ac (optional): The aircraft to set. 0 for the player aircraft.
-%     socket (optional): The client to use when sending the command.
-%       
+%
+% Ref: https://www.x-plane.com/kb/data-set-output-table/
 % Outputs
 %     status: If there was an error. Status<0 means there was an error.
 % 
